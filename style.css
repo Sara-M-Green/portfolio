@@ -79,23 +79,24 @@ p {
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     color: #3B3561;
-    max-width: 600px;
     margin: auto;
     padding-bottom: 5px;
 }
 
-/* portfolio list items style */
+/* about me list style */
 ol li {
     list-style-position: inside;
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     color: #3B3561;
+    margin-bottom: 5px;
 }
 
-/* portfolio list items style */
+/* about me list paragraph style */
 ol li p {
-    display: inline;
+   display: inline;
 }
+
 
 /* footer styling */
 footer {
@@ -140,6 +141,11 @@ footer p {
     max-width: 500px;
     border-radius: 50%;
     margin: 20px;
+}
+
+.about-list {
+    max-width: 800px;
+    margin: auto;
 }
 
 /* about me photos section syle */
