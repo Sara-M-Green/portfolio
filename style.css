@@ -2,17 +2,26 @@
     box-sizing: border-box;
 }
 
-nav {
-    width: 100%;
+/* ELEMENTS */
+
+body {
+    background-color: white;
 }
 
+/* Navbar syle */
+nav {
+    width: 100%;
+    background-color: #3B3561;
+}
+
+/* main style */
 main {
     text-align: center;
     font-family:'Amatic SC', cursive;
     text-decoration: none;
 }
 
-
+/* main style */
 main h1 {   
     margin-top: 30px;
     margin-bottom: 0px;
@@ -21,27 +30,44 @@ main h1 {
     text-transform: uppercase;
     padding-bottom: 0px;
     line-height: 1;
-    color: purple;
+    color: #495D63;
 }
 
+/* main style */
 main h2 {
     margin-top: 0px;
     margin-bottom: 10px;
     weight: 700;
     font-size: 24px;
     font-family: 'Open Sans', sans-serif;
+    color: #3B3561;
 }
 
+/* section headings */
+h3 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 60px;
+    margin: 5px auto;
+    color: #495D63;
+}
 
-a {
+/* Navbar syle */
+nav a {
     font-family:'Amatic SC', cursive;
     weight: 700;
     font-size: 42px;
     text-decoration: none;
+    color: white;
 }
 
-img {
-    width: 100%;
+/* Navbar syle */
+nav a:link, nav a:visited {
+    color: white;
+}
+
+/* Navbar syle */
+nav a:hover, nav a:active{
+    text-shadow: 1px 1px;
 }
 
 hr {
@@ -52,84 +78,95 @@ hr {
 p {
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
+    color: #3B3561;
+    max-width: 600px;
+    margin: auto;
+    padding-bottom: 5px;
 }
 
+/* portfolio list items style */
+ol li {
+    list-style-position: inside;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color: #3B3561;
+}
+
+/* portfolio list items style */
+ol li p {
+    display: inline;
+}
+
+/* footer styling */
 footer {
     border-top: 1px solid black;
     height: 50px;
+    background-color: #3B3561;
 }
 
+/* footer styling */
 footer p {
     font-family:'Amatic SC', cursive;
-    color: purple;
+    color: white;
     font-size: 28px;
-    margin-top: 5px;
-    margin-bottom: 2px;
+    margin: 5px 10px;
+    float: left;
 }
 
-/* Navbar Styling */
+/* CLASSES */
+
+/* navbar style */
 .nav-links {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
-/* Navbar Styling */
+
+/* navbar style */
 .left-side-link {
     float: left;
+    padding-left: 20px;
 }
-/* Navbar Styling */
+
+/* navbar style */
 .right-side-link {
     float: right;
     padding-right: 20px;
 }
 
-
+/* portrait photo style */
 .portrait {
     max-width: 500px;
+    border-radius: 50%;
+    margin: 20px;
 }
 
-.about-me {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
-}
-
-.about-paragraph {
-    max-width: 600px;
-    margin: auto;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
-    padding-bottom: 5px;
-}
-
-#about-header, #portfolio-header, #contact-header {
-    font-family: 'Amatic SC', cursive;
-    font-size: 60px;
-    text-decoration: underline;
-    margin: 5px auto;
-    color: purple;
-}
-
+/* about me photos section syle */
 .photos {
     max-width: 100%;
     margin-top: 30px;
     margin-bottom: 60px;
 }
 
+/* about me photos syle */
 .hobbies {
     max-width: 200px;
 }
 
+/* portfolio section style */
 .portfolio {
     margin-bottom: 60px;
 }
 
+/* portfolio images style */
 .portfolio img {
     max-width: 700px;
     display: block;
     margin: 10px auto;
 }
 
+/* contact me logos syle */
 .logo {
     max-width: 100px;
     margin: 10px;
