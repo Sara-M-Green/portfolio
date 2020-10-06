@@ -2,179 +2,120 @@
     box-sizing: border-box;
 }
 
-/* ELEMENTS */
-
 body {
-    background-color: white;
-}
-
-/* Navbar syle */
-nav {
-    width: 100%;
-    background-color: #3B3561;
-}
-
-/* main style */
-main {
-    text-align: center;
-    font-family:'Amatic SC', cursive;
-    text-decoration: none;
-}
-
-/* main style */
-main h1 {   
-    margin-top: 30px;
-    margin-bottom: 0px;
-    font-weight: 700;
-    font-size: 60px;
-    text-transform: uppercase;
-    padding-bottom: 0px;
-    line-height: 1;
-    color: #495D63;
-}
-
-/* main style */
-main h2 {
-    margin-top: 0px;
-    margin-bottom: 10px;
-    weight: 700;
-    font-size: 24px;
     font-family: 'Open Sans', sans-serif;
-    color: #3B3561;
 }
 
-/* section headings */
-h3 {
-    font-family: 'Amatic SC', cursive;
-    font-size: 60px;
-    margin: 5px auto;
-    color: #495D63;
+/* intro */
+h1 {
+    margin: 0px auto;
+    padding-top: 150px;
+    color: white;
+    text-shadow: 2px 2px 10px #000000, 0 0 20px black;
+    font-family: 'Karma', serif;
+    font-size: 48px;
 }
 
-/* Navbar syle */
-nav a {
-    font-family:'Amatic SC', cursive;
-    weight: 700;
+h2 {
+    margin: 0px;
+    color: white;
+    text-shadow: 2px 2px 10px #000000, 0 0 20px black;
+    font-family: 'Karma', serif;
     font-size: 42px;
-    text-decoration: none;
-    color: white;
 }
 
-/* Navbar syle */
-nav a:link, nav a:visited {
-    color: white;
-}
-
-/* Navbar syle */
-nav a:hover, nav a:active{
-    text-shadow: 1px 1px;
-}
-
-hr {
-    max-width: 800px;
-    margin: 50px auto;
-}
-
-p {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
-    color: #3B3561;
+h3 {
     margin: auto;
-    padding-bottom: 5px;
+    text-align: center;
+    font-size: 36px;
+    padding-top: 50px;
+    font-family: 'Karma', serif;
 }
 
-/* about me list style */
-ol li {
-    list-style-position: inside;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
-    color: #3B3561;
-    margin-bottom: 5px;
+.intro {
+    background-image: url(images/mountains.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    text-align:center;
+    height: 450px;
 }
 
-/* about me list paragraph style */
-ol li p {
-   display: inline;
+/* about me */
+
+.about h3 {
+    text-align: left;
 }
 
+/* portfolio */
 
-/* footer styling */
-footer {
-    border-top: 1px solid black;
-    height: 50px;
-    background-color: #3B3561;
+.bg-callout {
+    background-color: #F2F7F9;
 }
 
-/* footer styling */
-footer p {
-    font-family:'Amatic SC', cursive;
-    color: white;
-    font-size: 28px;
-    margin: 5px 10px;
-    float: left;
-}
-
-/* CLASSES */
-
-/* navbar style */
-.nav-links {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-/* navbar style */
-.left-side-link {
-    float: left;
-    padding-left: 20px;
-}
-
-/* navbar style */
-.right-side-link {
-    float: right;
-    padding-right: 20px;
-}
-
-/* portrait photo style */
-.portrait {
-    max-width: 500px;
-    border-radius: 50%;
-    margin: 20px;
-}
-
-.about-list {
-    max-width: 900px;
-    margin: auto;
-    }
-
-/* about me photos section syle */
-.photos {
-    max-width: 100%;
-    margin-top: 30px;
-    margin-bottom: 60px;
-}
-
-/* about me photos syle */
-.hobbies {
-    max-width: 200px;
-}
-
-/* portfolio section style */
-.portfolio {
-    margin-bottom: 60px;
-}
-
-/* portfolio images style */
-.portfolio img {
-    max-width: 700px;
-    display: block;
-    margin: 10px auto;
-}
-
-/* contact me logos syle */
+/* contact me */
 .logo {
-    max-width: 100px;
+    max-width: 200px;
     margin: 10px;
 }
 
+.contact {
+    margin: auto;
+    text-align: center;
+}
+
+/* footer */
+footer {
+    /* border-top: 1px solid black; */
+    height: 30px;
+    background-color: #e1ecf1;
+    border-top: 1px solid slategrey;
+}
+
+footer p {
+    font-family: 'Karma', serif;
+    font-size: 18px;
+    font-weight: 600;
+    padding-top: 10px;
+    padding-left: 5px;
+    background-color: #e1ecf1;
+}
+
+
+
+
+/* mobile first concept */
+
+img {
+    width: 100%;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    flex: 1;
+    padding: 20px;
+}
+
+/* desktop format */
+
+@media all and (min-width: 800px){
+    h3 {
+        font-size: 48px;
+    }
+    .group {
+        flex-direction: row;
+        padding: 30px;
+    }
+
+    .item {
+        padding: 30px;
+    }
+
+    .about {
+        margin: auto 100px;
+    }
+}
