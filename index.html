@@ -11,6 +11,14 @@
 
     <body>
         <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about-header">About</a></li>
+                    <li><a href="#portfolio-header">Portfolio</a></li>
+                    <li><a href="#contact-header">Contact</a></li>
+                </ul>
+            </nav>
         </header>
 
         <main>
@@ -32,26 +40,23 @@
                         <img class="portrait" src="images/portrait.jpg" alt="Sara Green headshot">
                     </div>
                     <div class="item-double about-paragraph">
-                        <h3>About Me</h3>
-                        <p>I am an adventure enthusiast who loves to write code! I graduated from Florida State University with a Master of Science in Marketing Degree and have transitioned into the tech industry.</p>
-                        <p>I build beautiful web apps using clean, semantic code that are designed to attract your target customer and boost SEO. </p>
-                        <p>I have a background in customer service which has given me great interpersonal skills. I love working with people and pride myself on my communication skills.</p>
-                        <p>I love to challenge myself both physically and mentally. Whether it's climbing to the top of a mountain, or debugging at my desk, I have the endurance to conquer any test put in front of me.</p>
-                        <p>I have experience using HTML, CSS, JavaScript, Express and Node.js. You can check out some of my projects below!</p>
-                        <p>Outside of web development, my hobbies include mountain biking, rock climbing, hiking, skiing and walks with my dog.</p>
+                        <h3 id="about-header">About Me</h3>
+                        <p>I am an adventure enthusiast who loves to write code! I graduated from Florida State University with a Master of Science in Marketing Degree and have since transitioned into the computer science industry. I build beautiful web apps using clean, semantic code that are designed to attract your target customer and boost SEO. </p>
+                        <p>I have a background in customer service which has given me great interpersonal competence. I love working with people and pride myself on my communication skills. I have experience using HTML, CSS, JavaScript, and jQuery. You can check out some of my projects below!</p>
+                        <p>I love to challenge myself both physically and mentally. Whether it's climbing to the top of a mountain, or debugging at my desk, I have the endurance to conquer any test put in front of me. Outside of web development, my hobbies include mountain biking, rock climbing, hiking, skiing and walks with my dog.</p>
                     </div>
                 </div>
-            </section>
+            </section> 
 
             <section class="bg-callout">
                 <!-- portfolio section -->
-                <h3>Portfolio</h3>
+                <h3 id="portfolio-header">Portfolio</h3>
                 <!-- portfolio group 1 - 3 items -->
                 <div class="group">
                     <div class="item">
-                        <img class="portfolio" src="images/comingsoon.png" alt="">
-                        <h4>Project 1 Title</h4>
-                        <p class="portfolio">Description of Project 1. I'll share what my goal was in creating it, the skills/languages I applied, and what I learned doing it.</p>
+                        <a href="https://github.com/Sara-M-Green/tipout.git"><img class="portfolio" src="images/tipout-screenshot.png" alt="screenshot of Shelter Distilling Tip Out App."></a>
+                        <h4>Bartender Tip Out App</h4>
+                        <p class="portfolio">A bartender tipout calculator for Shelter Distilling which uses HTML, CSS and JavaScript. By entering sales, tips are calculated by the appropriate percentage. After all tip outs are calculated, the remaining tips are allocated between bartenders. Throughout this project, I learned how to use DOM manipulation by selecting and manipulating inputs.</p>
                     </div>
                     <div class="item">
                         <img class="portfolio" src="images/comingsoon.png" alt="">
@@ -72,9 +77,24 @@
                         <h3 id="contact-header">Contact Me</h3>
                         <h4>Let's work together and build something beautiful!</h4>
                         <p>Feel free to send me an email or follow me on social media.</p>
-                        <p>Email: smg105c@gmail.com</p>
-                        <a href="https://github.com/Sara-M-Green" target="_blank"><img class="logo" src="images/github-logo.png" alt="GitHub logo"></a>
-                        <a href="https://www.linkedin.com/in/saragreen91/" target="blank"><img class="logo" src="images/linkedin-logo.png" alt="LinkedIn logo"></a>
+                        <div class="email-form">
+                            <form action="https://formspree.io/f/xrgoeoyp" method="POST">
+                                <label for="name">Name:</label>
+                                <input id="name" type="text" name="name" required>
+                                
+                                <label for="email">Email:</label>
+                                <input id="email" type="text" name="_replyto" required>
+                                
+                                <label for="message">Message:</label>
+                                <textarea id="message" name="message" required></textarea>
+                                
+                                <button type=submit>SEND</button>
+                            </form>
+                        </div>
+                        <div class="social-media">
+                            <a href="https://www.linkedin.com/in/saragreen91/" target="blank"><img class="logo" src="images/linkedin-logo.png" alt="LinkedIn logo"></a>
+                            <a href="https://github.com/Sara-M-Green" target="_blank"><img class="logo" src="images/github-logo.png" alt="GitHub logo"></a>
+                        </div>  
                     </div>     
                 </div>
             </section>
