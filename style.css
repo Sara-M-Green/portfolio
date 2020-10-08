@@ -8,7 +8,6 @@ body {
 
 /* Navbar */
 
-
 header nav {
     display: flex;
     justify-content: center;
@@ -87,30 +86,22 @@ h4 {
     background-color: #F2F7F9;
 }
 
+a.text-link:link {
+    color: black;
+}
+a.text-link:visited {
+    color: #516073;
+}
+
+a.text-link:active {
+    color: black;
+}
+
 #portfolio-header {
     padding-top: 20px
 }
 
 /* contact me */
-.logo {
-    max-width: 120px;
-    margin: 10px auto;
-}
-
-.contact {
-    margin: 0px auto;
-    text-align: center;
-}
-
-.social-media {
-    margin-top: 20px;
-}
-
-#contact-header {
-    padding-top: 0px;
-}
-
-
 form label {
     display: flex;
     font-size: 16px;
@@ -139,6 +130,24 @@ form button {
     margin: auto;
 }
 
+.logo {
+    max-width: 120px;
+    margin: 10px auto;
+}
+
+.contact {
+    margin: 0px auto;
+    text-align: center;
+}
+
+.social-media {
+    margin-top: 20px;
+}
+
+#contact-header {
+    padding-top: 0px;
+}
+
 /* footer */
 footer {
     /* border-top: 1px solid black; */
@@ -157,10 +166,7 @@ footer p {
 }
 
 
-
-
 /* mobile first concept */
-
 img {
     width: 100%;
 }
@@ -181,7 +187,6 @@ img {
 }
 
 /* desktop format */
-
 @media all and (min-width: 800px){
     header nav {
         justify-content: flex-end;
@@ -203,7 +208,11 @@ img {
         font-size: 48px;
         padding-top: 30px;
     }
-
+    
+    a.text-link:hover {
+        color: #516073
+    }
+        
     form {
         max-width: 500px;
         margin: auto;
