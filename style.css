@@ -86,15 +86,16 @@ h4 {
     background-color: #F2F7F9;
 }
 
-a.text-link:link {
-    color: black;
-}
-a.text-link:visited {
-    color: #516073;
+a.text-link:link {color:#7490b5;}
+a.text-link:visited {color: #7490b5;}
+a.text-link:active {color: #7490b5;}
+
+.github-links {
+    display: flex;
 }
 
-a.text-link:active {
-    color: black;
+.github-links p {
+    margin-right: 10px;
 }
 
 #portfolio-header {
@@ -129,6 +130,10 @@ form button {
     color: white;
     margin: auto;
 }
+
+a.email-link:link {color: #7490b5;}
+a.email-link:visited {color: #7490b5;}
+a.email-link:active {color: #7490b5;}
 
 .logo {
     max-width: 120px;
@@ -210,7 +215,7 @@ img {
     }
     
     a.text-link:hover {
-        color: #516073
+        color: #32465a;
     }
         
     form {
