@@ -11,4 +11,7 @@ A personal portfolio website to demonstrate to projects I've worked on, provide 
 - HTML
 - CSS
 
+### Screenshot
+![Screenshot of portfolio](images/portfolio-screenshot.png)
+
 
