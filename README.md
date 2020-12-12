@@ -1,10 +1,14 @@
-# portfolio
-A portfolio website to demonstrate who I am and provide samples of my work using HTML and CSS.
+# Portfolio
+A personal portfolio website to demonstrate to projects I've worked on, provide information about myself and resources to contact me.
 
-The website includes:
-* Intro
-* About Me
-* Portfolio
-* Contact Me
+### Portfolio Sections:
+- Intro
+- About Me
+- Portfolio
+- Contact Me
+
+### Built With
+- HTML
+- CSS
 
 
